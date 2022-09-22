@@ -1,0 +1,22 @@
+ion-title.title-main {
+  color: lightgrey;
+  font-size: 200%;
+  flex-grow: 1;
+}
+
+ion-toolbar {
+  --background: #2d2670;
+}
+
+ion-back-button {
+  --background: rgb(84, 69, 255);
+}
+
+.block-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  flex-direction: row;
+}

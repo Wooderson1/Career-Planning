@@ -1,0 +1,7 @@
+{
+  "name": "Esri_Career_Planning",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
