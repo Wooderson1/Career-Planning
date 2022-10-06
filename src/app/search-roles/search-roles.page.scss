@@ -4,22 +4,12 @@ ion-title.title-main {
   flex-grow: 1;
 }
 
-ion-title.title-large {
-  color: black;
-  font-size: 200%;
-  padding: 1%;
-}
-
 ion-toolbar {
   --background: #2d2670;
 }
 
-ion-button.bar {
+ion-button {
   --background: rgb(84, 69, 255);
-}
-
-ion-button.learn {
-  padding-left: 2%;
 }
 
 .sidebar-skype {
@@ -33,9 +23,4 @@ ion-button.learn {
   align-items: center;
   align-content: space-between;
   flex-direction: row;
-}
-
-p {
-  padding-left: 2%;
-  font-size: 150%;
 }

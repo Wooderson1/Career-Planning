@@ -21,7 +21,17 @@ const routes: Routes = [
   },
   {
     path: 'outside-support',
-    loadChildren: () => import('./outside-support/outside-support.module').then( m => m.OutsideSupportPageModule)
+    loadChildren: () =>
+      import('./outside-support/outside-support.module').then(
+        (m) => m.OutsideSupportPageModule
+      ),
+  },
+  {
+    path: 'search-roles',
+    loadChildren: () =>
+      import('./search-roles/search-roles.module').then(
+        (m) => m.SearchRolesPageModule
+      ),
   },
 ];
 

@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <img
+      src="assets/images/esri.png"
+      width="14%"
+      height="14%"
+      class="ion-margin"
+    />
+    <div slot="end" class="block-title">
+      <ion-title size="main">Career Planning</ion-title>
+      <ion-button (click)="goBack()">
+        <ion-icon name="arrow-back-circle-outline"></ion-icon>Back to Main
+      </ion-button>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-content class="ion-padding">
+    <ion-title>Search all possible role</ion-title>
+    <ion-searchbar
+      [debounce]="1000"
+      (ionChange)="handleChange($event)"
+    ></ion-searchbar>
+
+    <ion-list>
+      <ion-list-header>
+        <ion-label>Position</ion-label>
+        <ion-label>Minimum experience</ion-label>
+        <ion-label>Location</ion-label>
+      </ion-list-header>
+      <ion-item *ngFor="let role of results">
+        <ion-label>{{ role.role }}</ion-label>
+        <ion-label>{{ role.experience }}</ion-label>
+        <ion-label>{{ role.location }}</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-content>

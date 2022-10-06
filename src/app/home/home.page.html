@@ -10,10 +10,7 @@
       <ion-title size="main">Career Planning</ion-title>
     </div>
     <div slot="end">
-      <ion-searchbar
-        placeholder="Search a Specific Role"
-        animated="true"
-      ></ion-searchbar>
+      <ion-button [routerLink]="['/search-roles']">Search all Roles</ion-button>
     </div>
   </ion-toolbar>
 </ion-header>
@@ -29,26 +26,47 @@
     <ion-grid>
       <ion-row>
         <ion-col>
-          <ion-card button="true" [routerLink]="['/support']">
-            <ion-card-header>
-              <ion-title size="large">
-                Explore Options within Support Services<ion-icon
-                  name="arrow-forward-circle-outline"
-                ></ion-icon>
-              </ion-title>
-            </ion-card-header>
-            <ion-img src="assets\images\analyst.png"></ion-img>
+          <ion-card>
+            <ion-img
+              style="float: left; margin-bottom: 2%; height: 450px"
+              src="assets\images\analyst.png"
+            ></ion-img>
+            <!-- <ion-card-header> -->
+            <ion-title size="card">
+              Explore Options within Support Services
+            </ion-title>
+            <!-- </ion-card-header> -->
+            <p>
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+              aut fugit, sed quia consequuntur magni dolores eos qui ratione
+              voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+              aut fugit, sed quia consequuntur magni dolores eos qui ratione
+              voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.
+            </p>
+            <ion-button [routerLink]="['/support']">Learn More</ion-button>
           </ion-card>
-        </ion-col>
-        <ion-col>
           <ion-card button="true" [routerLink]="['/outside-support']">
+            <ion-img
+              style="float: right; margin-bottom: 2%; height: 450px"
+              src="assets\images\outside.png"
+            ></ion-img>
             <ion-card-header>
-              <ion-title size="large">
-                Explore Options Outside Support Services<ion-icon
-                  name="arrow-forward-circle-outline"
-                ></ion-icon></ion-title
-            ></ion-card-header>
-            <ion-img src="assets\images\outside.png"></ion-img>
+              <ion-title size="card">
+                Explore Options Outside Support Services</ion-title
+              ></ion-card-header
+            >
+            <p>
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+              aut fugit, sed quia consequuntur magni dolores eos qui ratione
+              voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+              aut fugit, sed quia consequuntur magni dolores eos qui ratione
+              voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.
+            </p>
+            <ion-button size="left" [routerLink]="['/outside-support']"
+              >Learn More</ion-button
+            >
           </ion-card>
         </ion-col>
       </ion-row>

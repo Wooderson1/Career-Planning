@@ -8,7 +8,7 @@
     />
     <div slot="end" class="block-title">
       <ion-title size="main">Career Planning</ion-title>
-      <ion-button (click)="goBack()"
+      <ion-button class="bar" (click)="goBack()"
         ><ion-icon name="arrow-back-circle-outline"></ion-icon>Back to
         Main</ion-button
       >
@@ -16,11 +16,137 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-content class="ion-padding">
-    <ion-title>Stay in Support Route</ion-title>
-    <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
-    </ion-buttons>
-  </ion-content>
+<ion-content class="ion-padding">
+  <ion-title size="large">Stay in Support Route</ion-title>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-title size="large"> Readiness Lead </ion-title>
+          <p padding="10%">
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+            fugit, sed quia consequuntur magni dolores eos qui ratione
+            voluptatem sequi<br />
+            nesciunt. Neque porro quisquam est.
+          </p>
+          <ion-button id="readiness-lead" class="learn" fill="outline"
+            >Learn More</ion-button
+          >
+          <ion-popover trigger="readiness-lead" triggerAction="click">
+            <ng-template>
+              <ion-content class="ion-padding">Hello World!</ion-content>
+            </ng-template>
+          </ion-popover>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <ion-title size="large"> Product Advocacy Lead </ion-title>
+          <p padding="10%">
+            Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore<br />
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation<br />
+            ullamco laboris nisi.
+          </p>
+          <ion-button id="product-advocacy" class="learn" fill="outline"
+            >Learn More</ion-button
+          >
+          <ion-popover trigger="product-advocacy" triggerAction="click">
+            <ng-template>
+              <ion-content class="ion-padding">Hello World!</ion-content>
+            </ng-template>
+          </ion-popover>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-title size="large"> Tech Lead </ion-title>
+          <p padding="10%">
+            Consequuntur magni dolores eos qui ratione voluptatem sequi
+            nesciunt.<br />
+            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,<br />
+            consectetur, adipisci velit, sed quia non numquam.
+          </p>
+          <ion-button id="tech-lead" class="learn" fill="outline"
+            >Learn More</ion-button
+          >
+          <ion-popover trigger="tech-lead" triggerAction="click">
+            <ng-template>
+              <ion-content class="ion-padding">Hello World!</ion-content>
+            </ng-template>
+          </ion-popover>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <ion-title size="large"> Technical Account Manager </ion-title>
+          <p padding="10%">
+            Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+            qui<br />
+            dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
+            quia non<br />
+            numquam eius modi tempora.
+          </p>
+          <ion-button
+            id="technical-account-manager"
+            class="learn"
+            fill="outline"
+            >Learn More</ion-button
+          >
+          <ion-popover
+            trigger="technical-account-manager"
+            triggerAction="click"
+          >
+            <ng-template>
+              <ion-content class="ion-padding"> Hello World! </ion-content>
+            </ng-template>
+          </ion-popover>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-title size="large"> Group Lead </ion-title>
+          <p padding="10%">
+            Consequuntur magni dolores eos qui ratione voluptatem sequi
+            nesciunt.<br />
+            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,<br />
+            consectetur, adipisci velit, sed quia non numquam.
+          </p>
+          <ion-button id="group-lead" class="learn" fill="outline"
+            >Learn More</ion-button
+          >
+          <ion-popover trigger="group-lead" triggerAction="click">
+            <ng-template>
+              <ion-content class="ion-padding">Hello World!</ion-content>
+            </ng-template>
+          </ion-popover>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <ion-title size="large"> Unit Manager </ion-title>
+          <p padding="10%">
+            Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+            qui<br />
+            dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
+            quia non<br />
+            numquam eius modi tempora.
+          </p>
+          <ion-button id="unit-manager" class="learn" fill="outline"
+            >Learn More</ion-button
+          >
+          <ion-popover trigger="unit-manager" triggerAction="click">
+            <ng-template>
+              <ion-content class="ion-padding">Hello World!</ion-content>
+            </ng-template>
+          </ion-popover>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

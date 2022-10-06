@@ -13,22 +13,14 @@
   line-height: 26px;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
 #container a {
   text-decoration: none;
 }
 
-ion-title.title-large {
-  color: rgb(84, 69, 255);
-  font-size: 300%;
+p {
+  margin-left: 2%;
+  display: block;
+  font-size: 200%;
 }
 
 ion-title.title-main {
@@ -36,13 +28,23 @@ ion-title.title-main {
   font-size: 200%;
 }
 
-ion-img {
-  height: 500px;
-  width: 100%;
+ion-title.title-card {
+  margin-top: 2%;
+  color: black;
+  font-size: 200%;
 }
 
 ion-toolbar {
   --background: #2d2670;
+}
+
+ion-button {
+  --background: rgb(84, 69, 255);
+}
+
+ion-button.button-left {
+  --background: rgb(84, 69, 255);
+  margin-left: 2%;
 }
 
 .block-title {
