@@ -24,19 +24,37 @@
         <ion-card>
           <ion-title size="large"> Readiness Lead </ion-title>
           <p padding="10%">
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-            fugit, sed quia consequuntur magni dolores eos qui ratione
-            voluptatem sequi<br />
-            nesciunt. Neque porro quisquam est.
+            Group Leads are vital to our organization and our customer’s success
+            as they develop and engage teams that support our customers in being
+            successful with Esri software. They frequently partner with other
+            roles in the organization to make programs such as Readiness and
+            Premium Support Program successful. Group leads also help with
+            strategic efforts by providing their feedback on workflows and
+            processes and by occasionally leading those efforts.<br />
+            <br />
+            The role is primarily supervisory however it has opportunities for
+            staying technically up-to-date with high-level information through
+            release bulletins and other case management tasks.
           </p>
-          <ion-button id="readiness-lead" class="learn" fill="outline"
+          <ion-button
+            (click)="setOpen(true)"
+            id="readiness-lead"
+            class="learn"
+            fill="outline"
             >Learn More</ion-button
           >
-          <ion-popover trigger="readiness-lead" triggerAction="click">
+          <ion-modal [isOpen]="isModalOpen">
             <ng-template>
-              <ion-content class="ion-padding">Hello World!</ion-content>
+              <ion-header>
+                <ion-toolbar>
+                  <ion-title>Modal</ion-title>
+                  <ion-buttons slot="end">
+                    <ion-button (click)="setOpen(false)">Close</ion-button>
+                  </ion-buttons>
+                </ion-toolbar>
+              </ion-header>
             </ng-template>
-          </ion-popover>
+          </ion-modal>
         </ion-card>
       </ion-col>
       <ion-col>
@@ -75,7 +93,7 @@
           >
           <ion-popover trigger="tech-lead" triggerAction="click">
             <ng-template>
-              <ion-content class="ion-padding">Hello World!</ion-content>
+              <ion-content class="ion-padding"> Hello World! </ion-content>
             </ng-template>
           </ion-popover>
         </ion-card>
