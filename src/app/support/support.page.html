@@ -43,14 +43,22 @@
           
           -->
 
-          <ion-button expand="block" (click)="setOpen(true)">Open</ion-button>
+          <ion-button
+            id="readiness-lead"
+            class="learn"
+            fill="outline"
+            (click)="setOpen(true)"
+            >Learn More</ion-button
+          >
           <ion-modal [isOpen]="isModalOpen">
             <ng-template>
               <ion-header>
                 <ion-toolbar>
-                  <ion-title>Modal</ion-title>
+                  <ion-title size="main">Readiness Lead</ion-title>
                   <ion-buttons slot="end">
-                    <ion-button (click)="setOpen(false)">Close</ion-button>
+                    <ion-button (click)="setOpen(false)"
+                      ><ion-title size="main">Close</ion-title></ion-button
+                    >
                   </ion-buttons>
                 </ion-toolbar>
               </ion-header>
@@ -61,6 +69,58 @@
                   molestias quos, dolorum consequuntur nisi deserunt omnis id
                   illo sit cum qui. Eaque, dicta.
                 </p>
+                <ion-grid>
+                  <ion-row>
+                    <ion-col>
+                      <img
+                        src="assets/images/poster.png"
+                        width="100%"
+                        height="100%"
+                        class="ion-margin"
+                      />
+                    </ion-col>
+                    <ion-col>
+                      <ion-accordion-group>
+                        <ion-accordion value="first">
+                          <ion-item slot="header" color="light">
+                            <ion-label
+                              >What standout skills contribute to success in
+                              this role</ion-label
+                            >
+                          </ion-item>
+                          <div class="ion-padding" slot="content">
+                            Standout Skills
+                          </div>
+                        </ion-accordion>
+                        <ion-accordion value="second">
+                          <ion-item slot="header" color="light">
+                            <ion-label
+                              >What desires, aspirations, or qualities should
+                              Support analysts exhibit to be considered a good
+                              hire?</ion-label
+                            >
+                          </ion-item>
+                          <div class="ion-padding" slot="content">
+                            Desires, aspiration ands qualities
+                          </div>
+                        </ion-accordion>
+                        <ion-accordion value="third">
+                          <ion-item slot="header" color="light">
+                            <ion-label
+                              >What training, experiences, and/or
+                              responsibilities can analysts complete to prepare
+                              for this role in their current
+                              position?</ion-label
+                            >
+                          </ion-item>
+                          <div class="ion-padding" slot="content">
+                            Training, experiences and responsibilities
+                          </div>
+                        </ion-accordion>
+                      </ion-accordion-group>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
               </ion-content>
             </ng-template>
           </ion-modal>
