@@ -17,6 +17,5 @@ export class SupportPage implements OnInit {
   setOpen(isOpen: boolean) {
     this.isModalOpen = isOpen;
   }
-
   ngOnInit() {}
 }

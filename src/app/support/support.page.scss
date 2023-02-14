@@ -39,3 +39,9 @@ p {
   padding-left: 2%;
   font-size: 150%;
 }
+
+ion-modal {
+  --width: 100%;
+  --height: 100%;
+  --border-radius: 0;
+}
