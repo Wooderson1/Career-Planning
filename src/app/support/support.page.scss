@@ -5,7 +5,7 @@ ion-title.title-main {
 }
 
 ion-title.title-large {
-  color: black;
+  color: #ffffff;
   font-size: 200%;
   padding: 1%;
 }
@@ -44,4 +44,11 @@ ion-modal {
   --width: 100%;
   --height: 100%;
   --border-radius: 0;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
 }

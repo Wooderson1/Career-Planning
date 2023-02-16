@@ -26,11 +26,13 @@
     <ion-list>
       <ion-list-header>
         <ion-label>Position</ion-label>
-        <ion-label>Minimum experience</ion-label>
+        <ion-label>Department</ion-label>
+        <ion-label>HR Recruiter</ion-label>
         <ion-label>Location</ion-label>
       </ion-list-header>
       <ion-item *ngFor="let role of results">
         <ion-label>{{ role.role }}</ion-label>
+        <ion-label>{{ role.experience }}</ion-label>
         <ion-label>{{ role.experience }}</ion-label>
         <ion-label>{{ role.location }}</ion-label>
       </ion-item>
