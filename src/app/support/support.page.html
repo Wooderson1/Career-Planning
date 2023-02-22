@@ -20,55 +20,32 @@
   <ion-title size="large">Stay in Support Route</ion-title>
   <ion-grid>
     <ion-row>
-      <ion-col>
+      <ion-col size="6" *ngFor="let roles of supportRoles">
         <ion-card>
-          <ion-title size="large"> Group Lead </ion-title>
-          <p padding="10%">
-            Group Leads are vital to our organization and our customer’s success
-            as they develop and engage teams that support our customers in being
-            successful with Esri software. They frequently partner with other
-            roles in the organization to make programs such as Readiness and
-            Premium Support Program successful. Group leads also help with
-            strategic efforts by providing their feedback on workflows and
-            processes and by occasionally leading those efforts.<br />
-            <br />
-            The role is primarily supervisory however it has opportunities for
-            staying technically up-to-date with high-level information through
-            release bulletins and other case management tasks.
+          <ion-title size="large"> {{ roles.role }} </ion-title>
+          <p style="white-space: pre-line" padding="10%">
+            {{roles.description}}
           </p>
-
-          <!-- 
-            
-            TEST POPUP 
-          
-          -->
-
           <ion-button
-            id="readiness-lead"
             class="learn"
             fill="outline"
-            (click)="setOpen(true)"
+            (click)="setOpen(true, roles)"
             >Learn More</ion-button
           >
+          <p></p>
           <ion-modal [isOpen]="isModalOpen">
             <ng-template>
               <ion-header>
                 <ion-toolbar>
-                  <ion-title size="main">Group Lead</ion-title>
+                  <ion-title size="main"> {{modalTmp.role}} </ion-title>
                   <ion-buttons slot="end">
-                    <ion-button (click)="setOpen(false)"
+                    <ion-button (click)="setOpen(false, '')"
                       ><ion-title size="main">Close</ion-title></ion-button
                     >
                   </ion-buttons>
                 </ion-toolbar>
               </ion-header>
               <ion-content class="ion-padding">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                  illum quidem recusandae ducimus quos reprehenderit. Veniam,
-                  molestias quos, dolorum consequuntur nisi deserunt omnis id
-                  illo sit cum qui. Eaque, dicta.
-                </p>
                 <ion-grid>
                   <ion-row>
                     <ion-col>
@@ -89,12 +66,11 @@
                             >
                           </ion-item>
                           <div class="ion-padding" slot="content">
-                            <div class="flex-container">
-                              <div>Organization skills</div>
-                              <div>Time Management</div>
-                              <div>Selfless/Team first Mindset</div>
-                              <div>Analytics/Critical Thinking</div>
-                              <div>Patience/Resilience</div>
+                            <div
+                              *ngFor="let skills of modalTmp.skills"
+                              class="flex-container"
+                            >
+                              - {{skills}}
                             </div>
                           </div>
                         </ion-accordion>
@@ -107,7 +83,7 @@
                             >
                           </ion-item>
                           <div class="ion-padding" slot="content">
-                            “It’s my desire to…”
+                            “It’s my desire to…” {{modalTmp.desires}}
                             <div class="flex-container">
                               <div>Help Others</div>
                               <div>
@@ -244,120 +220,6 @@
               </ion-content>
             </ng-template>
           </ion-modal>
-
-          <!-- 
-  
-            END TEST POP 
-
-          -->
-        </ion-card>
-      </ion-col>
-      <ion-col>
-        <ion-card>
-          <ion-title size="large"> Product Advocacy Lead </ion-title>
-          <p padding="10%">
-            Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore<br />
-            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation<br />
-            ullamco laboris nisi.
-          </p>
-          <ion-button id="product-advocacy" class="learn" fill="outline"
-            >Learn More</ion-button
-          >
-          <ion-popover trigger="product-advocacy" triggerAction="click">
-            <ng-template>
-              <ion-content class="ion-padding">Hello World!</ion-content>
-            </ng-template>
-          </ion-popover>
-        </ion-card>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col>
-        <ion-card>
-          <ion-title size="large"> Tech Lead </ion-title>
-          <p padding="10%">
-            Consequuntur magni dolores eos qui ratione voluptatem sequi
-            nesciunt.<br />
-            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,<br />
-            consectetur, adipisci velit, sed quia non numquam.
-          </p>
-          <ion-button id="tech-lead" class="learn" fill="outline"
-            >Learn More</ion-button
-          >
-          <ion-popover trigger="tech-lead" triggerAction="click">
-            <ng-template>
-              <ion-content class="ion-padding"> Hello World! </ion-content>
-            </ng-template>
-          </ion-popover>
-        </ion-card>
-      </ion-col>
-      <ion-col>
-        <ion-card>
-          <ion-title size="large"> Technical Account Manager </ion-title>
-          <p padding="10%">
-            Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
-            qui<br />
-            dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
-            quia non<br />
-            numquam eius modi tempora.
-          </p>
-          <ion-button
-            id="technical-account-manager"
-            class="learn"
-            fill="outline"
-            >Learn More</ion-button
-          >
-          <ion-popover
-            trigger="technical-account-manager"
-            triggerAction="click"
-          >
-            <ng-template>
-              <ion-content class="ion-padding"> Hello World! </ion-content>
-            </ng-template>
-          </ion-popover>
-        </ion-card>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col>
-        <ion-card>
-          <ion-title size="large"> Group Lead </ion-title>
-          <p padding="10%">
-            Consequuntur magni dolores eos qui ratione voluptatem sequi
-            nesciunt.<br />
-            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,<br />
-            consectetur, adipisci velit, sed quia non numquam.
-          </p>
-          <ion-button id="group-lead" class="learn" fill="outline"
-            >Learn More</ion-button
-          >
-          <ion-popover trigger="group-lead" triggerAction="click">
-            <ng-template>
-              <ion-content class="ion-padding">Hello World!</ion-content>
-            </ng-template>
-          </ion-popover>
-        </ion-card>
-      </ion-col>
-      <ion-col>
-        <ion-card>
-          <ion-title size="large"> Unit Manager </ion-title>
-          <p padding="10%">
-            Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
-            qui<br />
-            dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
-            quia non<br />
-            numquam eius modi tempora.
-          </p>
-          <ion-button id="unit-manager" class="learn" fill="outline"
-            >Learn More</ion-button
-          >
-          <ion-popover trigger="unit-manager" triggerAction="click">
-            <ng-template>
-              <ion-content class="ion-padding">Hello World!</ion-content>
-            </ng-template>
-          </ion-popover>
         </ion-card>
       </ion-col>
     </ion-row>
