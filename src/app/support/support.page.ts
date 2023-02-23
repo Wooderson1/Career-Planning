@@ -185,7 +185,7 @@ export class SupportPage implements OnInit {
             and prioritization needed on daily basis”`,
       ],
       url: '',
-      image: '',
+      image: 'assets/images/esri.png',
     },
     {
       role: `Tech Lead`,

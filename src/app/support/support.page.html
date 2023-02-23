@@ -51,15 +51,15 @@
                     <ion-col *ngIf="modalTmp.url !== ''">
                       <iframe
                         width="100%"
-                        height="100%"
+                        height="500px"
                         [src]="modalTmp.url | safe"
                       ></iframe>
                     </ion-col>
                     <ion-col *ngIf="modalTmp.image !== ''">
                       <img
-                        src="assets/images/esri.png"
-                        width="14%"
-                        height="14%"
+                        [src]="modalTmp.image"
+                        width="100%"
+                        height="100%"
                         class="ion-margin"
                       />
                     </ion-col>
