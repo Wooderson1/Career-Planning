@@ -26,7 +26,7 @@ ion-title.title-main {
 ion-title.title-card {
   margin-top: 2%;
   opacity: 87%;
-  color: #ffffff;
+  color: black;
   font-size: 200%;
 }
 
@@ -50,4 +50,16 @@ ion-button.button-left {
   align-items: center;
   align-content: space-between;
   flex-direction: row;
+}
+
+ion-grid {
+  background: white;
+}
+
+ion-card {
+  background: white;
+}
+
+.md {
+  --ion-background-color: white;
 }

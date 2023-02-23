@@ -24,3 +24,15 @@ ion-button {
   align-content: space-between;
   flex-direction: row;
 }
+
+ion-grid {
+  background: white;
+}
+
+ion-card {
+  background: white;
+}
+
+.md {
+  --ion-background-color: white;
+}
