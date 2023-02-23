@@ -1,6 +1,17 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
 
+import { Pipe, PipeTransform } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
+
+@Pipe({ name: 'safe' })
+export class SafePipe implements PipeTransform {
+  constructor(private domSanitizer: DomSanitizer) {}
+  transform(url) {
+    return this.domSanitizer.bypassSecurityTrustResourceUrl(url);
+  }
+}
+
 @Component({
   selector: 'app-support',
   templateUrl: './support.page.html',
@@ -17,6 +28,8 @@ export class SupportPage implements OnInit {
     prototypical: '',
     opportunities: '',
     surprises: '',
+    url: '',
+    image: '',
   };
 
   public supportRoles = [
@@ -36,6 +49,8 @@ export class SupportPage implements OnInit {
       prototypical: '',
       opportunities: '',
       surprises: '',
+      url: 'https://www.youtube.com/embed/SSM9fhISYLU',
+      image: '',
     },
     {
       role: `Product Advocacy Lead`,
@@ -48,11 +63,36 @@ export class SupportPage implements OnInit {
         'Analytics/Critical Thinking',
         'Patience/Resilience',
       ],
-      desires: ``,
+      desires: [
+        'Help Others',
+        'Drive Improvements in workflows and processes',
+        'Contribute to consistent and clear communication',
+        'Help in career development of other individuals',
+        'Create a self-managed and self-motivated team',
+      ],
+      aspires: [
+        'Help Others',
+        'Make a difference',
+        'Be customer focused',
+        'Be a good leader',
+        'Be an Esri Representative',
+      ],
+      iAm: [
+        'Determined/tenacious',
+        'Resourceful',
+        'Approachable',
+        'Open minded/flexible',
+        'Detail oriented',
+        'Self-motivated',
+        'Helpful',
+        'Thoughtful',
+      ],
       experiences: '',
       prototypical: '',
       opportunities: '',
       surprises: '',
+      url: '',
+      image: '',
     },
     {
       role: `Tech Lead`,
@@ -70,6 +110,7 @@ export class SupportPage implements OnInit {
       prototypical: '',
       opportunities: '',
       surprises: '',
+      url: '',
     },
     {
       role: `Technical Account Manager`,
@@ -87,6 +128,8 @@ export class SupportPage implements OnInit {
       prototypical: '',
       opportunities: '',
       surprises: '',
+      url: '',
+      image: '',
     },
   ];
 
