@@ -91,40 +91,32 @@
                           </ion-item>
                           <div class="ion-padding" slot="content">
                             “It’s my desire to…”
-                            <div class="flex-container">
-                              <div>Help Others</div>
-                              <div>
-                                Drive Improvements in workflows and processes
-                              </div>
-                              <div>
-                                Contribute to consistent and clear communication
-                              </div>
-                              <div>
-                                Help in career development of the individuals
-                              </div>
-                              <div>
-                                Create a self-managed and self-motivated team
-                              </div>
+                            <br /><br />
+                            <div
+                              class="flex-container"
+                              *ngFor="let desire of modalTmp.desires"
+                            >
+                              - {{desire}}
                             </div>
+                            <br />
                             “I aspire to…”
-                            <div class="flex-container">
-                              <div>Help Others</div>
-                              <div>Make a difference</div>
-                              <div>Be customer focused</div>
-                              <div>Be a good leader</div>
-                              <div>Esri Representative</div>
+                            <br /><br />
+                            <div
+                              class="flex-container"
+                              *ngFor="let aspire of modalTmp.aspires"
+                            >
+                              - {{aspire}}
                             </div>
+                            <br />
                             “I am…”
-                            <div class="flex-container">
-                              <div>Determined/ tenacious</div>
-                              <div>Resourceful</div>
-                              <div>Approachable</div>
-                              <div>Open minded/ flexible</div>
-                              <div>Detail oriented</div>
-                              <div>Self-motivated</div>
-                              <div>Helpful</div>
-                              <div>Thoughtfu</div>
+                            <br /><br />
+                            <div
+                              class="flex-container"
+                              *ngFor="let am of modalTmp.iAm"
+                            >
+                              - {{am}}
                             </div>
+                            <br />
                           </div>
                         </ion-accordion>
                         <ion-accordion value="third">
@@ -137,14 +129,11 @@
                             >
                           </ion-item>
                           <div class="ion-padding" slot="content">
-                            <div class="flex-container">
-                              <div>Crucial Conversations</div>
-                              <div>7 Habits of highly Effective People</div>
-                              <div>Situational self-leadership</div>
-                              <div>5 Choices to Extraordinary Productivity</div>
-                              <div>Crucial Accountability</div>
-                              <div>Leadership Essentials</div>
-                              <div>Slideology/Resonate</div>
+                            <div
+                              class="flex-container"
+                              *ngFor="let experience of modalTmp.experiences"
+                            >
+                              - {{experience}}
                             </div>
                           </div>
                         </ion-accordion>
@@ -157,24 +146,11 @@
                           </ion-item>
                           <div class="ion-padding" slot="content">
                             <div class="flex-container">
-                              <div>
-                                Analyst/Specialist – Ability to multi-task while
-                                working on several cases, prioritize work while
-                                handling crucial cases and managing difficult
-                                situations with customers translates well to the
-                                role.
-                              </div>
-                              <div>
-                                TAMs – Exposure to different situations with
-                                customers and working with different people
-                                within and outside Support Services provide a
-                                well-rounded background for the role.
-                              </div>
-                              <div>
-                                Tech Leads/Readiness Lead/Advocacy Lead – Any
-                                type of lead role within the organization gives
-                                exposure to leadership skills and critical
-                                thinking.
+                              <div
+                                class="flex-container"
+                                *ngFor="let proto of modalTmp.prototypical"
+                              >
+                                - {{proto}}
                               </div>
                             </div>
                           </div>
@@ -187,11 +163,11 @@
                             </ion-label>
                           </ion-item>
                           <div class="ion-padding" slot="content">
-                            <div class="flex-container">
-                              <div>Product Engineer – Julia Lenhardt</div>
-                              <div>Unit Manager – Dustin Hobbs</div>
-                              <div>Professional Services - Abhijit Mane</div>
-                              <div>Technical Lead – Henry Ho</div>
+                            <div
+                              class="flex-container"
+                              *ngFor="let opportunity of modalTmp.opportunities"
+                            >
+                              - {{opportunity}}
                             </div>
                           </div>
                         </ion-accordion>
@@ -204,18 +180,11 @@
                           </ion-item>
                           <div class="ion-padding" slot="content">
                             <div class="flex-container">
-                              <div>
-                                “It is almost impossible to be successful in the
-                                role without having or developing effective time
-                                management skills.”
-                              </div>
-                              <div>
-                                “I didn’t realize that GLs are so involved in
-                                case and queue management”
-                              </div>
-                              <div>
-                                “I was surprised by the amount of multi-tasking
-                                and prioritization needed on daily basis”
+                              <div
+                                class="flex-container"
+                                *ngFor="let surprise of modalTmp.surprises"
+                              >
+                                - {{surprise}}
                               </div>
                             </div>
                           </div>

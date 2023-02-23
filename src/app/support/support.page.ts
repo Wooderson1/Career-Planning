@@ -22,12 +22,14 @@ export class SupportPage implements OnInit {
   modalTmp = {
     role: ``,
     description: ``,
-    skills: '',
-    desires: ``,
-    experiences: '',
-    prototypical: '',
-    opportunities: '',
-    surprises: '',
+    skills: [],
+    desires: [],
+    aspires: [],
+    iAm: [],
+    experiences: [],
+    prototypical: [],
+    opportunities: [],
+    surprises: [],
     url: '',
     image: '',
   };
@@ -44,11 +46,68 @@ export class SupportPage implements OnInit {
         'Analytics/Critical Thinking',
         'Patience/Resilience',
       ],
-      desires: ``,
-      experiences: '',
-      prototypical: '',
-      opportunities: '',
-      surprises: '',
+      desires: [
+        'Help Others',
+        'Drive Improvements in workflows and processes',
+        'Contribute to consistent and clear communication',
+        'Help in career development of other individuals',
+        'Create a self-managed and self-motivated team',
+      ],
+      aspires: [
+        'Help Others',
+        'Make a difference',
+        'Be customer focused',
+        'Be a good leader',
+        'Be an Esri Representative',
+      ],
+      iAm: [
+        'Determined/tenacious',
+        'Resourceful',
+        'Approachable',
+        'Open minded/flexible',
+        'Detail oriented',
+        'Self-motivated',
+        'Helpful',
+        'Thoughtful',
+      ],
+      experiences: [
+        'Crucial Conversations',
+        '7 Habits of highly Effective People',
+        'Situational self-leadership',
+        '5 Choices to Extraordinary Productivity',
+        'Crucial Accountability',
+        'Leadership Essentials',
+        'Slide-ology/Resonate',
+      ],
+      prototypical: [
+        `Analyst/Specialist – Ability to multi-task while
+          working on several cases, prioritize work while
+          handling crucial cases and managing difficult
+          situations with customers translates well to the`,
+        `TAMs – Exposure to different situations with
+          customers and working with different people
+          within and outside Support Services provide a
+          well-rounded background for the role.`,
+        ` Tech Leads/Readiness Lead/Advocacy Lead – Any
+          type of lead role within the organization gives
+          exposure to leadership skills and critical
+          thinking.`,
+      ],
+      opportunities: [
+        'Product Engineer - Julia Lenhardt',
+        'Unit Manager - Dustin Hobbs',
+        'Professional Services - Abhijit Mane',
+        'Technical Lead = Henry Ho',
+      ],
+      surprises: [
+        `“It is almost impossible to be successful in the
+          role without having or developing effective time
+          management skills.”`,
+        `“I didn’t realize that GLs are so involved in
+            case and queue management”`,
+        `“I was surprised by the amount of multi-tasking
+            and prioritization needed on daily basis”`,
+      ],
       url: 'https://www.youtube.com/embed/SSM9fhISYLU',
       image: '',
     },
@@ -87,10 +146,44 @@ export class SupportPage implements OnInit {
         'Helpful',
         'Thoughtful',
       ],
-      experiences: '',
-      prototypical: '',
-      opportunities: '',
-      surprises: '',
+      experiences: [
+        'Crucial Conversations',
+        '7 Habits of highly Effective People',
+        'Situational self-leadership',
+        '5 Choices to Extraordinary Productivity',
+        'Crucial Accountability',
+        'Leadership Essentials',
+        'Slide-ology/Resonate',
+      ],
+      prototypical: [
+        `Analyst/Specialist – Ability to multi-task while
+          working on several cases, prioritize work while
+          handling crucial cases and managing difficult
+          situations with customers translates well to the`,
+        `TAMs – Exposure to different situations with
+          customers and working with different people
+          within and outside Support Services provide a
+          well-rounded background for the role.`,
+        ` Tech Leads/Readiness Lead/Advocacy Lead – Any
+          type of lead role within the organization gives
+          exposure to leadership skills and critical
+          thinking.`,
+      ],
+      opportunities: [
+        'Product Engineer - Julia Lenhardt',
+        'Unit Manager - Dustin Hobbs',
+        'Professional Services - Abhijit Mane',
+        'Technical Lead = Henry Ho',
+      ],
+      surprises: [
+        `“It is almost impossible to be successful in the
+          role without having or developing effective time
+          management skills.”`,
+        `“I didn’t realize that GLs are so involved in
+            case and queue management”`,
+        `“I was surprised by the amount of multi-tasking
+            and prioritization needed on daily basis”`,
+      ],
       url: '',
       image: '',
     },
