@@ -49,11 +49,7 @@
                 <ion-grid>
                   <ion-row>
                     <ion-col *ngIf="modalTmp.url !== ''">
-                      <iframe
-                        width="100%"
-                        height="500px"
-                        [src]="modalTmp.url | safe"
-                      ></iframe>
+                      <iframe [src]="modalTmp.url | safe"></iframe>
                     </ion-col>
                     <ion-col *ngIf="modalTmp.image !== ''">
                       <img class="modal" [src]="modalTmp.image" />
