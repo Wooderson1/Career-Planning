@@ -2,6 +2,7 @@ ion-title.title-main {
   color: lightgrey;
   font-size: 200%;
   flex-grow: 1;
+  font-family: "Avenir Next" !important;
 }
 
 ion-title.title-large {
@@ -9,6 +10,7 @@ ion-title.title-large {
   font-size: 200%;
   padding: 1%;
   margin-left: 1%;
+  font-family: "Avenir Next" !important;
 }
 
 ion-toolbar {
@@ -34,11 +36,13 @@ ion-button.learn {
   align-items: center;
   align-content: space-between;
   flex-direction: row;
+  font-family: "Avenir Next" !important;
 }
 
 p {
   padding-left: 2%;
   font-size: 150%;
+  font-family: "Avenir Next" !important;
 }
 
 ion-modal {

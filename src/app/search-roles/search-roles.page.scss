@@ -2,6 +2,7 @@ ion-title.title-main {
   color: lightgrey;
   font-size: 200%;
   flex-grow: 1;
+  font-family: "Avenir Next" !important;
 }
 
 ion-toolbar {
@@ -23,6 +24,7 @@ ion-button {
   align-items: center;
   align-content: space-between;
   flex-direction: row;
+  font-family: "Avenir Next" !important;
 }
 
 ion-grid {

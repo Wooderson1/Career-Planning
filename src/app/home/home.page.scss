@@ -16,11 +16,13 @@ p {
   margin-left: 2%;
   display: block;
   font-size: 200%;
+  font-family: "Avenir Next" !important;
 }
 
 ion-title.title-main {
   color: #ffffff;
   font-size: 200%;
+  font-family: "Avenir Next" !important;
 }
 
 ion-title.title-card {
@@ -28,6 +30,7 @@ ion-title.title-card {
   opacity: 87%;
   color: black;
   font-size: 200%;
+  font-family: "Avenir Next" !important;
 }
 
 ion-toolbar {
@@ -50,6 +53,7 @@ ion-button.button-left {
   align-items: center;
   align-content: space-between;
   flex-direction: row;
+  font-family: "Avenir Next" !important;
 }
 
 ion-grid {
