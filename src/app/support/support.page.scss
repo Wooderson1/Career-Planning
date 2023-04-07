@@ -93,3 +93,20 @@ div {
 ion-label {
   font-family: "Avenir Next" !important;
 }
+
+@media screen and (max-width: 1000px) {
+  ion-title.title-main {
+    font-size: 130%;
+  }
+  img {
+    width: 40%;
+    height: 40%;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  img {
+    width: 15%;
+    height: 15%;
+  }
+}
