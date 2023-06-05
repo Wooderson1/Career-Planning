@@ -54,8 +54,9 @@
                         <ion-accordion value="first">
                           <ion-item slot="header" color="light">
                             <ion-label
-                              >What standout skills contribute to success in
-                              this role</ion-label
+                              >What skills have you learned as an analyst that
+                              have contributed to success in this
+                              role?</ion-label
                             >
                           </ion-item>
                           <div class="ion-padding" slot="content">
@@ -70,9 +71,8 @@
                         <ion-accordion value="second">
                           <ion-item slot="header" color="light">
                             <ion-label
-                              >What desires, aspirations, or qualities should
-                              Support analysts exhibit to be considered a good
-                              hire?</ion-label
+                              >What new skills have you learned in this
+                              role?</ion-label
                             >
                           </ion-item>
                           <div class="ion-padding" slot="content">
@@ -126,26 +126,24 @@
                         <ion-accordion value="fourth">
                           <ion-item slot="header" color="light">
                             <ion-label
-                              >What are the prototypical feeder roles for {{
-                              modalTmp.role}}?
+                              >What are the primary responsibilities in this
+                              role?
                             </ion-label>
                           </ion-item>
                           <div class="ion-padding" slot="content">
-                            <div class="flex-container">
-                              <div
-                                class="flex-container"
-                                *ngFor="let proto of modalTmp.prototypical"
-                              >
-                                - {{proto}}
-                              </div>
+                            <div
+                              class="flex-container"
+                              *ngFor="let opportunity of modalTmp.opportunities"
+                            >
+                              - {{opportunity}}
                             </div>
                           </div>
                         </ion-accordion>
                         <ion-accordion value="fifth">
                           <ion-item slot="header" color="light">
                             <ion-label
-                              >What lateral/promotion career opportunities exist
-                              within Esri for those in this role?
+                              >What other responsibilities (secondary) are
+                              required in the role?
                             </ion-label>
                           </ion-item>
                           <div class="ion-padding" slot="content">
