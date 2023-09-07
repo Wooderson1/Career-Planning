@@ -42,140 +42,135 @@
               </ion-header>
               <ion-content class="ion-padding">
                 <ion-grid>
-                  <ion-row>
-                    <ion-col *ngIf="modalTmp.url !== ''">
-                      <iframe [src]="modalTmp.url | safe"></iframe>
-                    </ion-col>
-                    <ion-col *ngIf="modalTmp.image !== ''">
-                      <img class="modal" [src]="modalTmp.image" />
-                    </ion-col>
-                    <ion-col>
-                      <ion-accordion-group>
-                        <ion-accordion value="first">
-                          <ion-item slot="header" color="light">
-                            <ion-label
-                              >What skills have you learned as an analyst that
-                              have contributed to success in this
-                              role?</ion-label
-                            >
-                          </ion-item>
-                          <div class="ion-padding" slot="content">
-                            <div
-                              *ngFor="let skills of modalTmp.skills"
-                              class="flex-container"
-                            >
-                              - {{skills}}
-                            </div>
-                          </div>
-                        </ion-accordion>
-                        <ion-accordion value="second">
-                          <ion-item slot="header" color="light">
-                            <ion-label
-                              >What new skills have you learned in this
-                              role?</ion-label
-                            >
-                          </ion-item>
-                          <div class="ion-padding" slot="content">
-                            “It’s my desire to…”
-                            <br /><br />
-                            <div
-                              class="flex-container"
-                              *ngFor="let desire of modalTmp.desires"
-                            >
-                              - {{desire}}
-                            </div>
-                            <br />
-                            “I aspire to…”
-                            <br /><br />
-                            <div
-                              class="flex-container"
-                              *ngFor="let aspire of modalTmp.aspires"
-                            >
-                              - {{aspire}}
-                            </div>
-                            <br />
-                            “I am…”
-                            <br /><br />
-                            <div
-                              class="flex-container"
-                              *ngFor="let am of modalTmp.iAm"
-                            >
-                              - {{am}}
-                            </div>
-                            <br />
-                          </div>
-                        </ion-accordion>
-                        <ion-accordion value="third">
-                          <ion-item slot="header" color="light">
-                            <ion-label
-                              >What training, experiences, and/or
-                              responsibilities can analysts complete to prepare
-                              for this role in their current
-                              position?</ion-label
-                            >
-                          </ion-item>
-                          <div class="ion-padding" slot="content">
-                            <div
-                              class="flex-container"
-                              *ngFor="let experience of modalTmp.experiences"
-                            >
-                              - {{experience}}
-                            </div>
-                          </div>
-                        </ion-accordion>
-                        <ion-accordion value="fourth">
-                          <ion-item slot="header" color="light">
-                            <ion-label
-                              >What are the primary responsibilities in this
-                              role?
-                            </ion-label>
-                          </ion-item>
-                          <div class="ion-padding" slot="content">
-                            <div
-                              class="flex-container"
-                              *ngFor="let opportunity of modalTmp.opportunities"
-                            >
-                              - {{opportunity}}
-                            </div>
-                          </div>
-                        </ion-accordion>
-                        <ion-accordion value="fifth">
-                          <ion-item slot="header" color="light">
-                            <ion-label
-                              >What other responsibilities (secondary) are
-                              required in the role?
-                            </ion-label>
-                          </ion-item>
-                          <div class="ion-padding" slot="content">
-                            <div
-                              class="flex-container"
-                              *ngFor="let opportunity of modalTmp.opportunities"
-                            >
-                              - {{opportunity}}
-                            </div>
-                          </div>
-                        </ion-accordion>
-                        <ion-accordion value="sixth">
-                          <ion-item slot="header" color="light">
-                            <ion-label>
-                              What surprised you when you took on the role of {{
-                              modalTmp.role }}?
-                            </ion-label>
-                          </ion-item>
-                          <div class="ion-padding" slot="content">
-                            <div class="flex-container">
-                              <div
-                                class="flex-container"
-                                *ngFor="let surprise of modalTmp.surprises"
-                              >
-                                - {{surprise}}
-                              </div>
-                            </div>
-                          </div>
-                        </ion-accordion>
-                      </ion-accordion-group>
-                    </ion-col>
+                  <ion-row *ngIf="modalTmp.url !== '';else image">
+                    <iframe [src]="modalTmp.url | safe"></iframe>
                   </ion-row>
+                  <ng-template #image>
+                    <img class="modal" [src]="modalTmp.image" />
+                  </ng-template>
+                  <ion-col>
+                    <ion-accordion-group>
+                      <ion-accordion value="first">
+                        <ion-item slot="header" color="light">
+                          <ion-label
+                            >What skills have you learned as an analyst that
+                            have contributed to success in this role?</ion-label
+                          >
+                        </ion-item>
+                        <div class="ion-padding" slot="content">
+                          <div
+                            *ngFor="let skills of modalTmp.skills"
+                            class="flex-container"
+                          >
+                            - {{skills}}
+                          </div>
+                        </div>
+                      </ion-accordion>
+                      <ion-accordion value="second">
+                        <ion-item slot="header" color="light">
+                          <ion-label
+                            >What new skills have you learned in this
+                            role?</ion-label
+                          >
+                        </ion-item>
+                        <div class="ion-padding" slot="content">
+                          “It’s my desire to…”
+                          <br /><br />
+                          <div
+                            class="flex-container"
+                            *ngFor="let desire of modalTmp.desires"
+                          >
+                            - {{desire}}
+                          </div>
+                          <br />
+                          “I aspire to…”
+                          <br /><br />
+                          <div
+                            class="flex-container"
+                            *ngFor="let aspire of modalTmp.aspires"
+                          >
+                            - {{aspire}}
+                          </div>
+                          <br />
+                          “I am…”
+                          <br /><br />
+                          <div
+                            class="flex-container"
+                            *ngFor="let am of modalTmp.iAm"
+                          >
+                            - {{am}}
+                          </div>
+                          <br />
+                        </div>
+                      </ion-accordion>
+                      <ion-accordion value="third">
+                        <ion-item slot="header" color="light">
+                          <ion-label
+                            >What training, experiences, and/or responsibilities
+                            can analysts complete to prepare for this role in
+                            their current position?</ion-label
+                          >
+                        </ion-item>
+                        <div class="ion-padding" slot="content">
+                          <div
+                            class="flex-container"
+                            *ngFor="let experience of modalTmp.experiences"
+                          >
+                            - {{experience}}
+                          </div>
+                        </div>
+                      </ion-accordion>
+                      <ion-accordion value="fourth">
+                        <ion-item slot="header" color="light">
+                          <ion-label
+                            >What are the primary responsibilities in this role?
+                          </ion-label>
+                        </ion-item>
+                        <div class="ion-padding" slot="content">
+                          <div
+                            class="flex-container"
+                            *ngFor="let opportunity of modalTmp.opportunities"
+                          >
+                            - {{opportunity}}
+                          </div>
+                        </div>
+                      </ion-accordion>
+                      <ion-accordion value="fifth">
+                        <ion-item slot="header" color="light">
+                          <ion-label
+                            >What other responsibilities (secondary) are
+                            required in the role?
+                          </ion-label>
+                        </ion-item>
+                        <div class="ion-padding" slot="content">
+                          <div
+                            class="flex-container"
+                            *ngFor="let opportunity of modalTmp.opportunities"
+                          >
+                            - {{opportunity}}
+                          </div>
+                        </div>
+                      </ion-accordion>
+                      <ion-accordion value="sixth">
+                        <ion-item slot="header" color="light">
+                          <ion-label>
+                            What surprised you when you took on the role of {{
+                            modalTmp.role }}?
+                          </ion-label>
+                        </ion-item>
+                        <div class="ion-padding" slot="content">
+                          <div class="flex-container">
+                            <div
+                              class="flex-container"
+                              *ngFor="let surprise of modalTmp.surprises"
+                            >
+                              - {{surprise}}
+                            </div>
+                          </div>
+                        </div>
+                      </ion-accordion>
+                    </ion-accordion-group>
+                  </ion-col>
                 </ion-grid>
               </ion-content>
             </ng-template>

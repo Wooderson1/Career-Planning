@@ -18,7 +18,10 @@ export class SafePipe implements PipeTransform {
   styleUrls: ['./support.page.scss'],
 })
 export class SupportPage implements OnInit {
+  // Variable to control opening and closing the modal
   isModalOpen = false;
+
+  // Temporary modal object
   modalTmp = {
     role: ``,
     description: ``,
@@ -35,6 +38,9 @@ export class SupportPage implements OnInit {
   };
 
   public supportRoles = [
+    /*
+     ***********  Group Lead  **********
+     */
     {
       role: `Group Lead`,
       // eslint-disable-next-line max-len
@@ -111,6 +117,9 @@ export class SupportPage implements OnInit {
       url: 'https://www.youtube.com/embed/SSM9fhISYLU',
       image: '',
     },
+    /*
+      Product Advocacy
+    */
     {
       role: `Product Advocacy Lead`,
       // eslint-disable-next-line max-len
