@@ -25,6 +25,11 @@ export class SupportPage implements OnInit {
   modalTmp = {
     role: ``,
     description: ``,
+    department: '',
+    responsibilities: [],
+    requirements: [],
+    recommendedQualifications: [],
+    /*                MODAL Information Below               */
     // What Skills have you learned as an analyst that have contributed to success in this role?
     skills: [],
     // What new skills have you learned in this role?
@@ -37,7 +42,9 @@ export class SupportPage implements OnInit {
     secondaryResponsibilities: [],
     // What surprised you when you took on the role?
     surprises: [],
+    // URL if a video for the role exists
     url: '',
+    // Image location for an image if there is no video
     image: '',
   };
 
@@ -51,6 +58,22 @@ export class SupportPage implements OnInit {
       and processes and by occasionally leading those efforts.\n\n The role is primarily supervisory however 
       it has opportunities for staying technically up-to-date with high-level information through release bulletins 
       and other case management tasks.`,
+      department: 'Educational Services - Support Services',
+      responsibilities: [
+        `Coach, mentor, and connect with direct reports to foster a positive and trusting environment 
+        that supports innovation and employee engagement.`,
+        `Promote a diverse and inclusive environment for your team and stakeholders through a culture 
+        of empathy, respect, and collaboration`,
+        `Supervise the day-to-day activities of Support Services Analysts.`,
+        `Ensure that policies and procedures are maintained`,
+        `Lead performance management through active coaching, one-on-one check-ins, performance evaluations, 
+        and develop personal coaching plans for team members based on Support Services KPIs `,
+        `Supervise the unit dispatch queues and the management of escalated cases`,
+        `Participate in the recruiting process and manage the onboarding and off boarding of team members`,
+      ],
+      requirements: [],
+      recommendedQualifications: [],
+      /*                MODAL Information Below               */
       skills: [
         'Skills working with people.',
         'Modeling the right behavior by establishing trust.',
@@ -93,6 +116,11 @@ export class SupportPage implements OnInit {
         Group leads also help with strategic efforts by providing their feedback on workflows and processes and by occasionally 
         leading those efforts.\n\n The role is primarily supervisory however it has opportunities for staying technically up-to-date 
         with high-level information through release bulletins and other case management tasks.`,
+      department: '',
+      responsibilities: [],
+      requirements: [],
+      recommendedQualifications: [],
+      /*                MODAL Information Below               */
       skills: [],
       newSkills: [],
       experiences: [],
@@ -110,6 +138,11 @@ export class SupportPage implements OnInit {
       attention they require.\n\nIt is not possible to over-stress how important communication skills are to this role. This involves
        speaking up, ensuring you’re on the same page with your team, analysts, Group Leads, and ultimately the customer to 
        drive their success.`,
+      department: '',
+      responsibilities: [],
+      requirements: [],
+      recommendedQualifications: [],
+      /*                MODAL Information Below               */
       skills: [],
       newSkills: [],
       experiences: [],
@@ -126,6 +159,11 @@ export class SupportPage implements OnInit {
       Readiness Leads maintain expert knowledge on our core products and support systems, which paired with their leadership skills, 
       allow us to build creative, engaging, and innovative experiences for analysts, leads, 
       and managers so that they can connect with customers on each interaction and resolve issues effectively.`,
+      department: '',
+      responsibilities: [],
+      requirements: [],
+      recommendedQualifications: [],
+      /*                MODAL Information Below               */
       skills: [],
       newSkills: [],
       experiences: [],
