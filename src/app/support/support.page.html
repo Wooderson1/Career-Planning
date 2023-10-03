@@ -74,33 +74,12 @@
                           >
                         </ion-item>
                         <div class="ion-padding" slot="content">
-                          “It’s my desire to…”
-                          <br /><br />
                           <div
                             class="flex-container"
-                            *ngFor="let desire of modalTmp.desires"
+                            *ngFor="let newSkill of modalTmp.newSkills"
                           >
-                            - {{desire}}
+                            - {{newSkill}}
                           </div>
-                          <br />
-                          “I aspire to…”
-                          <br /><br />
-                          <div
-                            class="flex-container"
-                            *ngFor="let aspire of modalTmp.aspires"
-                          >
-                            - {{aspire}}
-                          </div>
-                          <br />
-                          “I am…”
-                          <br /><br />
-                          <div
-                            class="flex-container"
-                            *ngFor="let am of modalTmp.iAm"
-                          >
-                            - {{am}}
-                          </div>
-                          <br />
                         </div>
                       </ion-accordion>
                       <ion-accordion value="third">
@@ -129,9 +108,9 @@
                         <div class="ion-padding" slot="content">
                           <div
                             class="flex-container"
-                            *ngFor="let opportunity of modalTmp.opportunities"
+                            *ngFor="let responsibility of modalTmp.primaryResponsibilities"
                           >
-                            - {{opportunity}}
+                            - {{responsibility}}
                           </div>
                         </div>
                       </ion-accordion>
@@ -145,9 +124,9 @@
                         <div class="ion-padding" slot="content">
                           <div
                             class="flex-container"
-                            *ngFor="let opportunity of modalTmp.opportunities"
+                            *ngFor="let responsibility of modalTmp.secondaryResponsibilities"
                           >
-                            - {{opportunity}}
+                            - {{responsibility}}
                           </div>
                         </div>
                       </ion-accordion>
