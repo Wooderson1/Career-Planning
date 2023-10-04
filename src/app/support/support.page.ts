@@ -49,6 +49,7 @@ export class SupportPage implements OnInit {
   };
 
   public supportRoles = [
+    /******************************************     Group Lead    *********************************************/
     {
       role: `Group Lead`,
       description: `Group Leads are vital to our organization and our customer’s success as they develop 
@@ -83,7 +84,7 @@ export class SupportPage implements OnInit {
         `Experience working in customer service or support organizations.`,
         `Proficient in relevant supported technologies.`,
       ],
-      /*                MODAL Information Below               */
+      // MODAL Information Below
       skills: [
         'Skills working with people.',
         'Modeling the right behavior by establishing trust.',
@@ -118,6 +119,7 @@ export class SupportPage implements OnInit {
       url: 'https://www.youtube.com/embed/SSM9fhISYLU',
       image: '',
     },
+    /******************************************     Product Advocacy Lead     *********************************************/
     {
       role: `Product Advocacy Lead`,
       description: `Product Advocacy Leads are vital to our organization and our customer’s success as they develop
@@ -130,7 +132,7 @@ export class SupportPage implements OnInit {
       responsibilities: [],
       requirements: [],
       recommendedQualifications: [],
-      /*                MODAL Information Below               */
+      // MODAL Information Below
       skills: [],
       newSkills: [],
       experiences: [],
@@ -140,6 +142,7 @@ export class SupportPage implements OnInit {
       url: '',
       image: 'assets/images/blue.jpg',
     },
+    /******************************************     Technical Account Manager     *********************************************/
     {
       role: `Technical Account Manager`,
       description: `Technical Account Management (TAM’s) are integral to our organization and our customer’s success as they ensure 
@@ -149,10 +152,42 @@ export class SupportPage implements OnInit {
        speaking up, ensuring you’re on the same page with your team, analysts, Group Leads, and ultimately the customer to 
        drive their success.`,
       department: '',
-      responsibilities: [],
-      requirements: [],
-      recommendedQualifications: [],
-      /*                MODAL Information Below               */
+      responsibilities: [
+        `Utilize technical account management and problem-solving skills to isolate mission-critical issues; coordinate with various 
+        groups within Esri to connect our customers with the appropriate staff.`,
+        `Function as the customer facing representative for Esri’s Premium Support Program.`,
+        `Develop action plans and provide ongoing customer management with the goal of expediting resolution times.`,
+        `Function as technical liaison to Professional Services, Product teams, or international distributor/regional offices to 
+        provide business intelligence to various groups within Esri.`,
+        `Work with the escalation management team to monitor the progress of hot fix requests related to Premium Support customers, 
+        business partners, and international distributors.`,
+        `Function as an escalation manager for critical issues related to both Standard and Premium Support customers.`,
+        `Provide Premium Support customers, business partners, and international distributors with proactive information such 
+        as weekly status reports on support cases; participate in conference calls and perform on-site visits as needed.`,
+        `Focus on building long lasting professional relationships with customers and be familiar with clients’ architecture, 
+        infrastructure, and business goals.`,
+        `Maintain a high level of technical proficiency with Esri core technology.`,
+        `Leverage personal technical expertise to work collaboratively with analyst, customers, and other teams in an effort 
+        to resolve technical challenges.`,
+      ],
+      requirements: [
+        `Bachelor's or Master's degree.`,
+        `Experience in a technical support or GIS role.`,
+        `Superior account management skills and demonstrated professional experience providing expert-level technical support.`,
+        `Ability to understand critical nature of customer cases and be their advocate within Esri support.`,
+        `Demonstrate excellent presentation skills to internal and external senior management staff.`,
+        `Exceptional written and verbal communication skills in high pressure situations.`,
+        `Ability to multi-task and prioritize job requirements as well as strong.`,
+        `Organization skills.`,
+        `Ability to travel up to 25% of the time.`,
+      ],
+      recommendedQualifications: [
+        `Minimum of two years of in-depth knowledge and experience with Esri technology to include ArcGIS Pro and ArcGIS Enterprise.`,
+        `Minimum of two years of experience in customer care, customer support, or a related field.`,
+        `•	Minimum of two years of experience with escalation and account management and working with product development, sales, 
+        and professional services.`,
+      ],
+      // MODAL Information Below
       skills: [
         `Master's degree and a strong background in GIS.`,
         `Working with federal customers prepared me for working in the utility space, and working with regulations and
@@ -191,6 +226,7 @@ export class SupportPage implements OnInit {
       url: '',
       image: 'assets/images/collab.jpg',
     },
+    /******************************************     Readiness Lead     *********************************************/
     {
       role: `Readiness Lead`,
       description: `Readiness Leads are often visible on Chatter, in the classroom, and walking the floor preparing others to provide 
@@ -202,7 +238,7 @@ export class SupportPage implements OnInit {
       responsibilities: [],
       requirements: [],
       recommendedQualifications: [],
-      /*                MODAL Information Below               */
+      // MODAL Information Below
       skills: [],
       newSkills: [],
       experiences: [],
@@ -212,6 +248,7 @@ export class SupportPage implements OnInit {
       url: 'https://www.youtube.com/embed/SSM9fhISYLU',
       image: '',
     },
+    /******************************************     Tech Lead     *********************************************/
     {
       role: `Tech Lead`,
       description: `Technology Leads (TLs) are an integral part of the Product Supportability team in Esri Support Services. 
