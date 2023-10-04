@@ -32,15 +32,17 @@
             <ng-template>
               <ion-header>
                 <ion-toolbar>
-                  <ion-title size="main"> {{modalTmp.role}} </ion-title>
+                  <!-- <ion-title size="main"> {{modalTmp.role}} </ion-title> -->
                   <ion-buttons slot="end">
                     <ion-button (click)="setOpen(false, '')"
                       ><ion-title size="main">Close</ion-title></ion-button
                     >
                   </ion-buttons>
                 </ion-toolbar>
+                <ion-title size="center"> {{modalTmp.role}} </ion-title>
               </ion-header>
               <ion-content class="ion-padding">
+                <!-- <ion-title size="center"> {{modalTmp.role}} </ion-title> -->
                 <ion-grid>
                   <ion-row *ngIf="modalTmp.url !== '';else image">
                     <iframe [src]="modalTmp.url | safe"></iframe>
@@ -149,6 +151,8 @@
                         </div>
                       </ion-accordion>
                     </ion-accordion-group>
+
+                    <ion-title>test</ion-title>
                   </ion-col>
                 </ion-grid>
               </ion-content>

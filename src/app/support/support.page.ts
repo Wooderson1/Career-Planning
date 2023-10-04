@@ -63,16 +63,26 @@ export class SupportPage implements OnInit {
         `Coach, mentor, and connect with direct reports to foster a positive and trusting environment 
         that supports innovation and employee engagement.`,
         `Promote a diverse and inclusive environment for your team and stakeholders through a culture 
-        of empathy, respect, and collaboration`,
+        of empathy, respect, and collaboration.`,
         `Supervise the day-to-day activities of Support Services Analysts.`,
-        `Ensure that policies and procedures are maintained`,
+        `Ensure that policies and procedures are maintained.`,
         `Lead performance management through active coaching, one-on-one check-ins, performance evaluations, 
-        and develop personal coaching plans for team members based on Support Services KPIs `,
-        `Supervise the unit dispatch queues and the management of escalated cases`,
-        `Participate in the recruiting process and manage the onboarding and off boarding of team members`,
+        and develop personal coaching plans for team members based on Support Services KPIs.`,
+        `Supervise the unit dispatch queues and the management of escalated cases.`,
+        `Participate in the recruiting process and manage the onboarding and off boarding of team members.`,
       ],
-      requirements: [],
-      recommendedQualifications: [],
+      requirements: [
+        `Experience in a technical role in Support Services.`,
+        `Experience in mentoring and training others in a similar work environment.`,
+        `A motivated individual who can work well independently and collaborate with others.`,
+        `Strong attention to detail and proven ability to effectively communicate.`,
+        `Demonstrated ability to organize and work on multiple concurrent projects.`,
+      ],
+      recommendedQualifications: [
+        `Experience supervising and effectively training technical staff.`,
+        `Experience working in customer service or support organizations.`,
+        `Proficient in relevant supported technologies.`,
+      ],
       /*                MODAL Information Below               */
       skills: [
         'Skills working with people.',
@@ -143,12 +153,41 @@ export class SupportPage implements OnInit {
       requirements: [],
       recommendedQualifications: [],
       /*                MODAL Information Below               */
-      skills: [],
-      newSkills: [],
-      experiences: [],
-      primaryResponsibilities: [],
-      secondaryResponsibilities: [],
-      surprised: [],
+      skills: [
+        `Master's degree and a strong background in GIS.`,
+        `Working with federal customers prepared me for working in the utility space, and working with regulations and
+        court mandated concerns.`,
+        `Being able to identify high stakes situations before things get bad.`,
+        `Mastering the basics (An Advanced skill set is mastery of basic skills).`,
+        `Being able to bridge the gap between the business side of things and technical detail-oriented GIS knowledge.`,
+      ],
+      newSkills: [
+        `Negotiation tactics in to high stakes situations.`,
+        `How to control your emotions when in high staked, high emotional situations.`,
+        `Developing a direct relationship with customers and understanding the bigger picture of the issues that you may not 
+        be exposed to as an analyst.`,
+      ],
+      experiences: [
+        `Speaking with every team, getting the full picture. Every industry is going to be a little different.`,
+        `Mastering the basics, especially communication and note taking.`,
+      ],
+      primaryResponsibilities: [
+        `Ensuring customer success.`,
+        `Case review and working with analysts to keep cases moving.`,
+        `Staying available for the customers and analysts. Not over scheduling meetings to stay available. 
+        Customers can hit an issue that is in production that needs immediate attention. Staying available 
+        is important for sudden situations, even after regular hours.`,
+      ],
+      secondaryResponsibilities: [
+        `Varies based on the customer.`,
+        `Involvement in regulatory concerns.`,
+        `Helping the customer manage their cases, and when to utilize a PSS case if they have a limited number.`,
+      ],
+      surprised: [
+        `Slowing down the in-depth trouble shooting skills involved in the analyst role.`,
+        `Letting the analysts user their own knowledge and focusing on the big picture`,
+        `Working and speaking with important people in and without an organization.`,
+      ],
       url: '',
       image: 'assets/images/collab.jpg',
     },
