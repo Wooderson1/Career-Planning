@@ -32,17 +32,14 @@
             <ng-template>
               <ion-header>
                 <ion-toolbar>
-                  <!-- <ion-title size="main"> {{modalTmp.role}} </ion-title> -->
                   <ion-buttons slot="end">
                     <ion-button (click)="setOpen(false, '')"
                       ><ion-title size="main">Close</ion-title></ion-button
                     >
                   </ion-buttons>
                 </ion-toolbar>
-                <ion-title size="center"> {{modalTmp.role}} </ion-title>
               </ion-header>
               <ion-content class="ion-padding">
-                <!-- <ion-title size="center"> {{modalTmp.role}} </ion-title> -->
                 <ion-grid>
                   <ion-row *ngIf="modalTmp.url !== '';else image">
                     <iframe [src]="modalTmp.url | safe"></iframe>
@@ -51,6 +48,7 @@
                     <img class="modal" [src]="modalTmp.image" />
                   </ng-template>
                   <ion-col>
+                    <ion-title size="center"> {{modalTmp.role}} </ion-title>
                     <ion-accordion-group>
                       <ion-accordion value="first">
                         <ion-item slot="header" color="light">
@@ -151,8 +149,28 @@
                         </div>
                       </ion-accordion>
                     </ion-accordion-group>
-
-                    <ion-title>test</ion-title>
+                    <br />
+                    <!-- Job Description -->
+                    <ion-title size="large">Overview</ion-title>
+                    <p>{{modalTmp.description}}</p>
+                    <ion-title size="large">Responsibility</ion-title>
+                    <ul
+                      *ngFor="let responsibility of modalTmp.responsibilities"
+                    >
+                      <li>{{responsibility}}</li>
+                    </ul>
+                    <ion-title size="large">Requirements</ion-title>
+                    <ul *ngFor="let requirement of modalTmp.requirements">
+                      <li>{{requirement}}</li>
+                    </ul>
+                    <ion-title size="large"
+                      >Recommended Qualifications</ion-title
+                    >
+                    <ul
+                      *ngFor="let recommended of modalTmp.recommendedQualifications"
+                    >
+                      <li>{{recommended}}</li>
+                    </ul>
                   </ion-col>
                 </ion-grid>
               </ion-content>
