@@ -36,8 +36,8 @@ export class SupportPage implements OnInit {
     newSkills: [],
     // What training, experiences, and/or responsibilities can analysts complete to prepare for this rile in their current position
     experiences: [],
-    // What are the primary responsibilities in this role?
-    primaryResponsibilities: [],
+    // What are the daily responsibilities in this role?
+    dailyResponsibilities: [],
     // What are other responsibilities (secondary) are required in the role?
     secondaryResponsibilities: [],
     // What surprised you when you took on the role?
@@ -98,7 +98,7 @@ export class SupportPage implements OnInit {
         'The power of silence.',
         'Asking a ton of questions and be true to what you want to be in the role.',
       ],
-      primaryResponsibilities: [
+      dailyResponsibilities: [
         'Ensuring that analysts have all the necessary resources and support to successfully carry out their tasks is the top priority.',
         `Maintaining transparency and providing feedback to the team is vital.
         This includes relaying important updates, setting clear expectations,
@@ -159,7 +159,7 @@ export class SupportPage implements OnInit {
       skills: [],
       newSkills: [],
       experiences: [],
-      primaryResponsibilities: [],
+      dailyResponsibilities: [],
       secondaryResponsibilities: [],
       surprised: [],
       url: '',
@@ -229,7 +229,7 @@ export class SupportPage implements OnInit {
         `Speaking with every team, getting the full picture. Every industry is going to be a little different.`,
         `Mastering the basics, especially communication and note taking.`,
       ],
-      primaryResponsibilities: [
+      dailyResponsibilities: [
         `Ensuring customer success.`,
         `Case review and working with analysts to keep cases moving.`,
         `Staying available for the customers and analysts. Not over scheduling meetings to stay available. 
@@ -257,14 +257,34 @@ export class SupportPage implements OnInit {
       support systems, which paired with their leadership skills, allow us to build creative, engaging, and innovative experiences \
       for analysts, leads, and managers so that they can connect with customers on each interaction and resolve issues effectively.`,
       department: '',
-      responsibilities: [],
-      requirements: [],
-      recommendedQualifications: [],
+      responsibilities: [
+        `Partner with global operations leaders to align business objectives and address skill gaps through training, coaching, 
+        assessments, and hands-on practice.`,
+        `Design, develop, and implement training programs related to ArcGIS Extensions and emerging technologies.`,
+        `Mature and codify organizational knowledge by building resources in our centralized learning systems and integrating
+         them into onboarding and continuous learning plans.`,
+        `Continuously evaluate the impact of training programs and identify areas of improvement for individuals, teams, and units.`,
+        `Additional Support Readiness projects as required.`,
+      ],
+      requirements: [
+        `Experience along with a bachelor’s or master’s degree in GIS, geography, environmental science, 
+        computer science, management information systems, or other relevant fields.`,
+        `Sincere passion and drive to be a leader within Technical Support by developing the technical and professional 
+        skills of our global organization.`,
+        `Proven ability to effectively communicate complex concepts, processes, and tasks to various audiences in meaningful 
+        terms and gather feedback.`,
+        `Exposure to or interest in instructional design and talent development.`,
+      ],
+      recommendedQualifications: [
+        `Experience in leadership, coordination, training, or supervisory roles.`,
+        `Knowledge of instructional design principles, facilitation, or project management.`,
+        `Certification in Instructional Design or Facilitation.`,
+      ],
       // MODAL Information Below
       skills: [],
       newSkills: [],
       experiences: [],
-      primaryResponsibilities: [],
+      dailyResponsibilities: [],
       secondaryResponsibilities: [],
       surprised: [],
       url: 'https://www.youtube.com/embed/SSM9fhISYLU',
@@ -276,14 +296,110 @@ export class SupportPage implements OnInit {
       description: `Technology Leads (TLs) are an integral part of the Product Supportability team in Esri Support Services. \
       With a focus on product expertise and technical leadership, they work as part of the team to resolve the most challenging\
       customer issues and help ensure analysts have the tools and resources they need to make our customers successful.`,
+      department: '',
+      responsibilities: [
+        `Collaborate with Analysts and TAMs to guarantee effective partnerships with strategic customers.`,
+        `Engage with Product Development about cases, trends, and collaboration opportunities.`,
+        `Participate in Holistic testing, usability testing, exam development, and beta support.`,
+        `Triage product defects, hotfixes, and defect escalations.`,
+        `Share technical Knowledge through knowledge transfers, sessions, Salesforce Knowledge Articles, and Esri Blogs.`,
+        `Attend user conferences, developer summits, and other events.`,
+      ],
+      requirements: [
+        `Bachelor's or master's degree.`,
+        `Experience in a technical role in Support Services.`,
+        `Passion for influencing and improving the quality of Esri Support Services and Esri Products.`,
+        `Background in software support or technical customer service with direct end-user contact.`,
+        `Strong verbal and communication skills.`,
+        `Clear understanding of ArcGIS Online infrastructure and functionality.`,
+        `Clear understanding of integrated apps with ArcGIS Online.`,
+      ],
+      recommendedQualifications: [
+        `Experience supervising and effectively training technical staff.`,
+        `Experience working in customer service or support organizations.`,
+        `Robust knowledge of ArcGIS Online.`,
+      ],
+      // MODAL Information Below
+      skills: [
+        `Troubleshooting and problem-solving in the Analyst role helped to prepare for the daily tasks a Tech Lead role requires`,
+        `Hosting Mobile Taskforce meetings also allowed for improvement in troubleshooting skills and assisting other analysts 
+        with issues related to applications. `,
+      ],
+      newSkills: [
+        `Better navigating crucial conversations which in turn led to better managing expectations from all angles.`,
+        `Crucial conversations can occur with Analysts, Technical Account Managers and Product teams.`,
+      ],
+      experiences: [
+        `Crucial conversations - this instructor led course prepared me to better navigate tough conversations 
+        that may be encountered in this role`,
+        `Leadership skills – Joining the Mobile taskforce helped to improve not only presentation skill but also troubleshooting skills.`,
+      ],
+      dailyResponsibilities: [
+        `Working on Tech Assists.`,
+        `Reviewing defects to ensure all necessary information is provided.`,
+        `Facilitating conversations between various teams.`,
+      ],
+      secondaryResponsibilities: [
+        `Reoccurring meetings – meeting with regional Tech Leads and Domestic Tech Leads, Unit Managers and Lead Product Engineers`,
+        `Understanding the general development of analyst.s`,
+        `Getting a better understanding of team technical development.`,
+        `Office hours, 1 on 1 meetings with analysts and identifying trends allow for us to better understand 
+        where improvements may be necessary.`,
+      ],
+      surprised: [
+        `The amount of tough conversations that you have as a Tech Lead. Your crucial conversations are geared towards a 
+        different audience as a Tech Lead versus the Analyst role. The audience switch from the customer to other analysts, 
+        Technical Account Managers and Product Teams.`,
+      ],
+      url: '',
+      image: 'assets/images/purple.jpg',
+    },
+    /******************************************     DevOps Support Engineer     *********************************************/
+    {
+      role: `DevOps Support Engineer`,
+      description: `Great software requires hard work by incredibly smart people. Esri Support Services has developed an identity \
+      by making sure that we're helpful whenever there is a need.  As a support engineer, you will leverage your in-depth \
+      knowledge of ArcGIS Online and ArcGIS Enterprise to build a deeper relationship with Esri’s DevOps team.`,
+      department: '',
+      responsibilities: [
+        `Provide high-quality technical support and customer service to Esri end users through effective communication 
+        and efficient troubleshooting.`,
+        `Maintain comprehensive case documentation in the customer relationship management (CRM) system.`,
+        `Identify issues and log defects for software improvements.`,
+        `Own cases and build strong collaborative partnerships with DevOps team to drive fixes and resolution of 
+        customer issues dealing with infrastructure/backend problems.`,
+        `Assist ArcGIS analysts in understanding when issues are related to the infrastructure or backend of ArcGIS Online.`,
+        `Actively monitor, report, and message out system-wide service disruptions to staff to provide better awareness.`,
+        `Develop and/or propose tools to assist in identifying common issues customers face as a result of the infrastructure or backend.`,
+        `Participate in knowledge transfer and building of common language around infrastructure.`,
+        `Provide rotational on-call technical support.`,
+      ],
+      requirements: [
+        `Experience troubleshooting Esri software, preferably ArcGIS Online and/or ArcGIS Enterprise.`,
+        `Excellent customer service, troubleshooting, analytical, and problem-solving skills.`,
+        `Ability to patiently communicate technical information clearly and concisely.`,
+        `Strong prioritization skills, including managing time and workload efficiently.`,
+        `Ability to learn new concepts quickly, process large amounts of information, and adapt to a changing work environment.`,
+        `Demonstrate excellent presentation skills to internal and external senior management staff.`,
+        `Exceptional written and verbal communication skills in high-pressure situations.`,
+        `U.S. citizenship or U.S. permanent resident.`,
+        `Bachelor’s in GIS, geography, environmental science, computer science, management information systems, 
+        or another relevant field, depending on position level.`,
+      ],
+      recommendedQualifications: [
+        `Experience working with one or more programming languages (C#, VB.NET, Java, C++, Swift, or JavaScript).`,
+        `Experience using python in troubleshooting service-related issues.`,
+        `Background in software support or technical customer service with direct end user contact.`,
+      ],
+      // MODAL Information Below
       skills: [],
       newSkills: [],
       experiences: [],
-      primaryResponsibilities: [],
+      dailyResponsibilities: [],
       secondaryResponsibilities: [],
       surprised: [],
       url: '',
-      image: 'assets/images/purple.jpg',
+      image: 'assets/images/collab.jpg',
     },
   ];
 

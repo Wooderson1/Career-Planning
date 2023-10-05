@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <img src="assets/images/esri.png" />
+    <img src="assets/images/esri1.png" />
     <div slot="end" class="block-title">
       <ion-title size="main">Career Planning</ion-title>
       <ion-button class="bar" (click)="goBack()"
@@ -108,7 +108,7 @@
                         <div class="ion-padding" slot="content">
                           <div
                             class="flex-container"
-                            *ngFor="let responsibility of modalTmp.primaryResponsibilities"
+                            *ngFor="let responsibility of modalTmp.dailyResponsibilities"
                           >
                             - {{responsibility}}
                           </div>
@@ -153,7 +153,7 @@
                     <br /><br />
                     <!-- Job Description -->
                     <ion-title size="JD">Overview</ion-title>
-                    <p class="test">{{modalTmp.description}}</p>
+                    <p class="overview">{{modalTmp.description}}</p>
                     <ion-title size="JD">Responsibility</ion-title>
                     <ul
                       *ngFor="let responsibility of modalTmp.responsibilities"
