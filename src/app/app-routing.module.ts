@@ -26,13 +26,6 @@ const routes: Routes = [
         (m) => m.OutsideSupportPageModule
       ),
   },
-  {
-    path: 'search-roles',
-    loadChildren: () =>
-      import('./search-roles/search-roles.module').then(
-        (m) => m.SearchRolesPageModule
-      ),
-  },
 ];
 
 @NgModule({
