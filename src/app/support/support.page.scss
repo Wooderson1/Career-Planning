@@ -14,10 +14,19 @@ ion-title.title-large {
 }
 
 ion-title.title-center {
-  color: black;
+  color: lightgrey;
   font-size: 300%;
   padding: 2%;
   text-align: center;
+  font-family: "Avenir Next" !important;
+}
+
+ion-title.title-JD {
+  color: black;
+  font-size: 200%;
+  padding-left: 7%;
+  padding-bottom: 1%;
+  padding-top: 1%;
   font-family: "Avenir Next" !important;
 }
 
@@ -50,6 +59,20 @@ ion-button.learn {
 p {
   padding-left: 2%;
   font-size: 150%;
+  font-family: "Avenir Next" !important;
+}
+
+p.test {
+  line-height: 1.8;
+  padding-left: 7%;
+  padding-right: 20%;
+  font-size: 20px;
+  font-family: "Avenir Next" !important;
+}
+
+ul {
+  padding-left: 8%;
+  font-size: 20px;
   font-family: "Avenir Next" !important;
 }
 
@@ -98,16 +121,6 @@ div {
 
 ion-label {
   font-family: "Avenir Next" !important;
-}
-
-@media screen and (max-width: 1000px) {
-  ion-title.title-main {
-    font-size: 130%;
-  }
-  img {
-    width: 40%;
-    height: 40%;
-  }
 }
 
 @media screen and (min-width: 1001px) {

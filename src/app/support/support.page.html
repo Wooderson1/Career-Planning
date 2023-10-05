@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <img src="assets/images/esri.png" class="ion-margin" />
+    <img src="assets/images/esri.png" />
     <div slot="end" class="block-title">
       <ion-title size="main">Career Planning</ion-title>
       <ion-button class="bar" (click)="goBack()"
@@ -37,6 +37,7 @@
                       ><ion-title size="main">Close</ion-title></ion-button
                     >
                   </ion-buttons>
+                  <ion-title size="center"> {{modalTmp.role}} </ion-title>
                 </ion-toolbar>
               </ion-header>
               <ion-content class="ion-padding">
@@ -48,7 +49,6 @@
                     <img class="modal" [src]="modalTmp.image" />
                   </ng-template>
                   <ion-col>
-                    <ion-title size="center"> {{modalTmp.role}} </ion-title>
                     <ion-accordion-group>
                       <ion-accordion value="first">
                         <ion-item slot="header" color="light">
@@ -150,22 +150,21 @@
                       </ion-accordion>
                     </ion-accordion-group>
                     <br />
+                    <br /><br />
                     <!-- Job Description -->
-                    <ion-title size="large">Overview</ion-title>
-                    <p>{{modalTmp.description}}</p>
-                    <ion-title size="large">Responsibility</ion-title>
+                    <ion-title size="JD">Overview</ion-title>
+                    <p class="test">{{modalTmp.description}}</p>
+                    <ion-title size="JD">Responsibility</ion-title>
                     <ul
                       *ngFor="let responsibility of modalTmp.responsibilities"
                     >
                       <li>{{responsibility}}</li>
                     </ul>
-                    <ion-title size="large">Requirements</ion-title>
+                    <ion-title size="JD">Requirements</ion-title>
                     <ul *ngFor="let requirement of modalTmp.requirements">
                       <li>{{requirement}}</li>
                     </ul>
-                    <ion-title size="large"
-                      >Recommended Qualifications</ion-title
-                    >
+                    <ion-title size="JD">Recommended Qualifications</ion-title>
                     <ul
                       *ngFor="let recommended of modalTmp.recommendedQualifications"
                     >

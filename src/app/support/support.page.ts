@@ -56,7 +56,7 @@ export class SupportPage implements OnInit {
       and engage teams that support our customers in being successful with Esri software. They frequently 
       partner with other roles in the organization to make programs such as Readiness and Premium Support 
       Program successful. Group leads also help with strategic efforts by providing their feedback on workflows 
-      and processes and by occasionally leading those efforts.\n\n The role is primarily supervisory however 
+      and processes and by occasionally leading those efforts. The role is primarily supervisory however 
       it has opportunities for staying technically up-to-date with high-level information through release bulletins 
       and other case management tasks.`,
       department: 'Educational Services - Support Services',
