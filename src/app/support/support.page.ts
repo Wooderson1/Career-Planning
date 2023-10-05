@@ -52,12 +52,12 @@ export class SupportPage implements OnInit {
     /******************************************     Group Lead    *********************************************/
     {
       role: `Group Lead`,
-      description: `Group Leads are vital to our organization and our customer’s success as they develop 
-      and engage teams that support our customers in being successful with Esri software. They frequently 
-      partner with other roles in the organization to make programs such as Readiness and Premium Support 
-      Program successful. Group leads also help with strategic efforts by providing their feedback on workflows 
-      and processes and by occasionally leading those efforts. The role is primarily supervisory however 
-      it has opportunities for staying technically up-to-date with high-level information through release bulletins 
+      description: `Group Leads are vital to our organization and our customer’s success as they develop \
+      and engage teams that support our customers in being successful with Esri software. They frequently \
+      partner with other roles in the organization to make programs such as Readiness and Premium Support \
+      Program successful. Group leads also help with strategic efforts by providing their feedback on workflows \
+      and processes and by occasionally leading those efforts. The role is primarily supervisory however \
+      it has opportunities for staying technically up-to-date with high-level information through release bulletins \
       and other case management tasks.`,
       department: 'Educational Services - Support Services',
       responsibilities: [
@@ -122,11 +122,11 @@ export class SupportPage implements OnInit {
     /******************************************     Product Advocacy Lead     *********************************************/
     {
       role: `Product Advocacy Lead`,
-      description: `Product Advocacy Leads are vital to our organization and our customer’s success as they develop
-       and engage teams that support our customers in being successful with Esri software. They frequently partner
-        with other roles in the organization to make programs such as Readiness and Premium Support Program successful. 
-        Group leads also help with strategic efforts by providing their feedback on workflows and processes and by occasionally 
-        leading those efforts.\n\n The role is primarily supervisory however it has opportunities for staying technically up-to-date 
+      description: `Product Advocacy Leads are vital to our organization and our customer’s success as they develop\
+       and engage teams that support our customers in being successful with Esri software. They frequently partner\
+        with other roles in the organization to make programs such as Readiness and Premium Support Program successful.\
+        Group leads also help with strategic efforts by providing their feedback on workflows and processes and by occasionally \
+        leading those efforts.\n\n The role is primarily supervisory however it has opportunities for staying technically up-to-date \
         with high-level information through release bulletins and other case management tasks.`,
       department: '',
       responsibilities: [],
@@ -145,11 +145,11 @@ export class SupportPage implements OnInit {
     /******************************************     Technical Account Manager     *********************************************/
     {
       role: `Technical Account Manager`,
-      description: `Technical Account Management (TAM’s) are integral to our organization and our customer’s success as they ensure 
-      our Premium Support program is maintained and customers gather value from it. They also serve as escalation managers for issues 
-      that can sprawl company wide. To this end they help ensure our high value customers are receiving the technical support and 
-      attention they require.\n\nIt is not possible to over-stress how important communication skills are to this role. This involves
-       speaking up, ensuring you’re on the same page with your team, analysts, Group Leads, and ultimately the customer to 
+      description: `Technical Account Management (TAM’s) are integral to our organization and our customer’s success as they ensure \
+      our Premium Support program is maintained and customers gather value from it. They also serve as escalation managers for issues \
+      that can sprawl company wide. To this end they help ensure our high value customers are receiving the technical support and \
+      attention they require.\n\nIt is not possible to over-stress how important communication skills are to this role. This involves\
+       speaking up, ensuring you’re on the same page with your team, analysts, Group Leads, and ultimately the customer to \
        drive their success.`,
       department: '',
       responsibilities: [
@@ -229,11 +229,10 @@ export class SupportPage implements OnInit {
     /******************************************     Readiness Lead     *********************************************/
     {
       role: `Readiness Lead`,
-      description: `Readiness Leads are often visible on Chatter, in the classroom, and walking the floor preparing others to provide 
-      Esri customers with the best possible support experience. 
-      Readiness Leads maintain expert knowledge on our core products and support systems, which paired with their leadership skills, 
-      allow us to build creative, engaging, and innovative experiences for analysts, leads, 
-      and managers so that they can connect with customers on each interaction and resolve issues effectively.`,
+      description: `Readiness Leads are often visible on Chatter, in the classroom, and walking the floor preparing others to provide \
+      Esri customers with the best possible support experience. Readiness Leads maintain expert knowledge on our core products and \
+      support systems, which paired with their leadership skills, allow us to build creative, engaging, and innovative experiences \
+      for analysts, leads, and managers so that they can connect with customers on each interaction and resolve issues effectively.`,
       department: '',
       responsibilities: [],
       requirements: [],
@@ -251,8 +250,8 @@ export class SupportPage implements OnInit {
     /******************************************     Tech Lead     *********************************************/
     {
       role: `Tech Lead`,
-      description: `Technology Leads (TLs) are an integral part of the Product Supportability team in Esri Support Services. 
-      With a focus on product expertise and technical leadership, they work as part of the team to resolve the most challenging
+      description: `Technology Leads (TLs) are an integral part of the Product Supportability team in Esri Support Services. \
+      With a focus on product expertise and technical leadership, they work as part of the team to resolve the most challenging\
       customer issues and help ensure analysts have the tools and resources they need to make our customers successful.`,
       skills: [],
       newSkills: [],
