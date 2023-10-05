@@ -129,8 +129,31 @@ export class SupportPage implements OnInit {
         leading those efforts.\n\n The role is primarily supervisory however it has opportunities for staying technically up-to-date \
         with high-level information through release bulletins and other case management tasks.`,
       department: '',
-      responsibilities: [],
-      requirements: [],
+      responsibilities: [
+        `Partner with the Product Management team from product inception to launch and operational support.`,
+        `Research and present product or service-related metrics, trends, and insights at regular intervals for debriefing 
+        with product management throughout the release cycle.`,
+        `Facilitate change management and readiness around a product release, functional changes, or messaging.`,
+        `Create multimedia content to address challenge areas for practitioners and customers using systems such as 
+        My Trailhead, YouTube, Salesforce Knowledge, or ArcGIS blogs.`,
+        `Connect and engage with staff and customers through formal and informal communities related to Esri and ArcGIS.`,
+        `Research, document, and act upon customer feedback for products through various channels.`,
+        `Champion ArcGIS throughout your network, communities, and events.`,
+      ],
+      requirements: [
+        `Possess a bachelor’s degree in GIS, geography, environmental science, computer science, management information systems, 
+        or other relevant fields.`,
+        `Experience in a technical role.`,
+        `You know ArcGIS products and how they fit together to enable location intelligence.`,
+        `Ability to forge new relationships and navigate complicated situations to maintain forward progress.`,
+        `Be proactive and highly collaborative to identify and resolve challenges within a team-centric environment.`,
+        `Carry a sincere passion for influencing and improving the quality of Esri products by contributing to their success.`,
+        `Enthusiasm and motivation to learn and understand all aspects of Esri Services & Product Management.`,
+        `Skill to explain important and complex concepts, processes, and tasks in understandable terms.`,
+        `Demonstrable experience with effective communication, presentation, and interpersonal skills, including collaboration, 
+        research, storytelling, and facilitation to influence cross-functional teams, software support, 
+        or technical customer organizations`,
+      ],
       recommendedQualifications: [],
       // MODAL Information Below
       skills: [],
@@ -184,7 +207,7 @@ export class SupportPage implements OnInit {
       recommendedQualifications: [
         `Minimum of two years of in-depth knowledge and experience with Esri technology to include ArcGIS Pro and ArcGIS Enterprise.`,
         `Minimum of two years of experience in customer care, customer support, or a related field.`,
-        `•	Minimum of two years of experience with escalation and account management and working with product development, sales, 
+        `Minimum of two years of experience with escalation and account management and working with product development, sales, 
         and professional services.`,
       ],
       // MODAL Information Below

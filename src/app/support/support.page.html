@@ -164,7 +164,11 @@
                     <ul *ngFor="let requirement of modalTmp.requirements">
                       <li>{{requirement}}</li>
                     </ul>
-                    <ion-title size="JD">Recommended Qualifications</ion-title>
+                    <ion-title
+                      *ngIf="modalTmp.recommendedQualifications.length > 0"
+                      size="JD"
+                      >Recommended Qualifications</ion-title
+                    >
                     <ul
                       *ngFor="let recommended of modalTmp.recommendedQualifications"
                     >
