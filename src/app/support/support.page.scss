@@ -1,6 +1,8 @@
 ion-title.title-main {
   color: lightgrey;
-  font-size: 200%;
+  font-size: 250%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   flex-grow: 1;
   font-family: "Avenir Next" !important;
 }
@@ -67,6 +69,11 @@ p.overview {
   padding-left: 7%;
   padding-right: 20%;
   font-size: 20px;
+  font-family: "Avenir Next" !important;
+}
+
+p.main {
+  padding-right: 4%;
   font-family: "Avenir Next" !important;
 }
 
@@ -145,4 +152,8 @@ ion-label {
     width: 15%;
     height: 15%;
   }
+}
+
+ion-icon {
+  color: lightgrey;
 }
