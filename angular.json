@@ -41,7 +41,11 @@
             "namedChunks": true
           },
           "configurations": {
+            "development": {
+              "assets": ["src/favicon.ico", "src/assets", "src/web.config"]
+            },
             "production": {
+              "assets": ["src/favicon.ico", "src/assets"],
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
@@ -121,10 +125,7 @@
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
-            "lintFilePatterns": [
-              "src/**/*.ts",
-              "src/**/*.html"
-            ]
+            "lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
           }
         },
         "e2e": {
@@ -146,9 +147,7 @@
     }
   },
   "cli": {
-    "schematicCollections": [
-      "@ionic/angular-toolkit"
-    ],
+    "schematicCollections": ["@ionic/angular-toolkit"],
     "analytics": "5b4e0bfb-933a-4c74-bacc-b8f74ce2d576"
   },
   "schematics": {
